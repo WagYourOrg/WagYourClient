@@ -8,8 +8,3 @@
          if (this.splash == null) {
              this.splash = this.minecraft.getSplashManager().getSplash();
          }
-@@ -373,3 +374,4 @@
-     }
- }
- 
-+
