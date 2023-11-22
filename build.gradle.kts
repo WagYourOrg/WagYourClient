@@ -1,4 +1,3 @@
-import xyz.wagyourtail.patchbase.gradle.patchBaseCreator
 import xyz.wagyourtail.unimined.api.task.GenSourcesTask
 
 plugins {
@@ -29,9 +28,9 @@ unimined.minecraft {
 
     jarMod {
     }
-
-    patchBaseCreator()
 }
+
+patchbase.patchBaseCreator(sourceSets.main.get())
 
 tasks.named<GenSourcesTask>("genSources") {
     args.add(0, "-ind=    ")
