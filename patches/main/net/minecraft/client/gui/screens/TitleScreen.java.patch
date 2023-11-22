@@ -1,0 +1,15 @@
+--- TitleScreen.java
++++ TitleScreen.java
+@@ -110,6 +110,7 @@
+ 
+     @Override
+     protected void init() {
++        System.out.println("Hello from Patchbase!");
+         if (this.splash == null) {
+             this.splash = this.minecraft.getSplashManager().getSplash();
+         }
+@@ -373,3 +374,4 @@
+     }
+ }
+ 
++
